@@ -1,0 +1,129 @@
+
+/* Reset default margin and padding for the entire page */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif; /* Set a preferred font family */
+}
+
+/* Style the header */
+
+
+/* Style the h1 element within the header */
+header {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Style the .roadmap container */
+.roadmap {
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0px; /* Add some spacing around the content */  box-shadow: 0 0 10px rgb(0, 0, 0); /* Add a subtle box shadow */
+}
+
+/* Style the text items within the roadmap */
+.roadmap .text-wrapper-7 {
+  font-size: 94px;
+  margin: 100px 0;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+  
+
+}
+
+/* Style the individual roadmap items (e.g., Doctor, Physiotherapist, etc.) */
+.roadmap .div-wrapper {
+  background: linear-gradient(to bottom, #3b3679, #655fa4, #8d8de6);
+  border: 4px solid #6971ca; /* Add a border around the item */
+  padding: 20px; /* Add spacing inside the item */
+  margin: 10px 0; /* Add vertical margin between items */
+}
+
+/* Style the links within the items */
+.roadmap .div-wrapper a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set the text color for links */
+  font-weight: bold;
+}
+
+/* Apply hover effect to links */
+.roadmap .div-wrapper a:hover {
+  color: #242582; /* Change text color on hover */
+}
+/* Style for the navbar */
+.navbar {
+  background-color: #6971ca;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+/* Style for the logo text */
+.logo-text {
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+  margin: 0;
+}
+
+/* Style for the navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+.nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1000;
+  margin-left: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #c69a3b;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #c69a3b;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 5px;
+}
+
+
+
+

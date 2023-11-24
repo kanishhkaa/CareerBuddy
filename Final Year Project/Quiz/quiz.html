@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <!-- Add any additional styles or scripts you need -->
+</head>
+<body class="blue-box">
+    <nav class="navbar">
+        <h1 class="logo-text">Career Buddy</h1>
+        <div class="nav-links">
+            <a href="http://127.0.0.1:5501/index.html" class="nav-home-button">Home</a>
+            <a href="/Roadmap/roadmap.html">Roadmap</a>
+            <a href="/About/about.html">About Us</a>
+            <a href="/login/login.html">Login</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Career Quiz</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <section class="quiz-section">
+                <h2>About You</h2>
+                <label for="college">Which college are you attending?</label>
+                <input type="text" id="college" name="college" required>
+
+                <label for="degree">What year of your degree are you in?</label>
+                <input type="number" id="degree" name="degree" required>
+
+                <label for="interests">What are your main interests? (e.g., technology, art, sports)</label>
+                <input type="text" id="interests" name="interests" required>
+            </section>
+
+            <section class="quiz-section">
+                <h2>Your Skills</h2>
+                <label for="skills">List your skills (e.g., communication, programming, leadership)</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <p>Rate your skills from 1 (low) to 10 (high):</p>
+                <!-- Example skill rating questions -->
+                <div class="skill-rating">
+                    <label for="programming">Programming:</label>
+                    <input type="number" id="programming" name="programming" min="1" max="10" required>
+                </div>
+
+                <!-- Add more skill rating questions as needed -->
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

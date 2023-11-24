@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.nav-home-button {
+    display: none;
+}
+
+.blue-box {
+    background-color: #242582;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #6971ca;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+.nav-links a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #c69a3b;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #c69a3b;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 5px;
+}
+
+.main-body-text {
+    text-align: left;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.main-body-text h1 {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+.main-body-image {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    max-height: 100%;
+    filter: blur(2px); /* Adjust the blur value as needed */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.quiz-button, .chat-button {
+    background-color:#6971ca;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.quiz-button:hover, .chat-button:hover {
+    background-color: #c69a3b;
+}
